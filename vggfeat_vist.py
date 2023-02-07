@@ -117,8 +117,7 @@ def main(config):
     # Load VGG16 model for extracting features for images in data. Save the 
     # extracted features   
     base_model = VGG16(weights= 'imagenet', include_top=True)
-    model = Model(input=base_model.input, 
-                  input=base_model.get_layer('fc2').output)
+    model = Model(base_model.input, base_model.get_layer('fc2').output)
     model.summary()
         
     print('loaded VGG model...')
