@@ -36,7 +36,7 @@ def get_parse_tree(data):
 
 def main(config):
     
-    datadir = './data/'
+    datadir = '/kaggle/working/GP/data/'
     process = ['train', 'val', 'test']
     
     for proc in process:
