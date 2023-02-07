@@ -62,7 +62,7 @@ def loadData(config):
         print('loaded all files in {} secs'.format(time.time() - starttime))
         # get word vectors from glove
         embeddings_index = {}
-        f = open(glovetext, 'rb')
+        f = open(glovetext, 'r', encoding='windows-1252')
         for line in f:
             values = line.split()
             word = values[0]
