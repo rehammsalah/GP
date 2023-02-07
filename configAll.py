@@ -15,7 +15,7 @@ def create_config():
     config['model'] = 'cnsi'
     # replace the below date to match trained models for evaluation
     config['date'] = time.strftime("%Y-%m-%d")
-    config['datadir'] = '../../data/'
+    config['datadir'] = '/kaggle/working/GP/data/'
 
     # filenames
     config['glovetext'] = './data/glove.6B.300d.txt'
