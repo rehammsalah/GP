@@ -18,10 +18,10 @@ def create_config():
     config['datadir'] = '/kaggle/working/GP/data/'
 
     # filenames
-    config['glovetext'] = './data/glove.6B.300d.txt'
-    config['testsamples'] = ('./data/test_samples.txt')
-    config['savepred'] = ('./data/test_samples_prediction.pickle')
-    config['savemodel'] = './TrainedModels/'
+    config['glovetext'] = '/kaggle/working/GP/data/glove.6B.300d.txt'
+    config['testsamples'] = ('/kaggle/working/GP/data/test_samples.txt')
+    config['savepred'] = ('/kaggle/working/GP/data/test_samples_prediction.pickle')
+    config['savemodel'] = '/kaggle/working/GP/TrainedModels/'
     
     # Pretraining stage 1 (or baseline) parameters
     config['pretrain'] = dict()
