@@ -118,7 +118,7 @@ def main(config):
     # extracted features   
     base_model = VGG16(weights= 'imagenet', include_top=True)
     model = Model(input=base_model.input, 
-                  output=base_model.get_layer('fc2').output)
+                  input=base_model.get_layer('fc2').output)
     model.summary()
         
     print('loaded VGG model...')
